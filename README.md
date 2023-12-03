@@ -1,7 +1,9 @@
 # Following features have been implemented
 
 1. Infinite scroll on upward and downward directions
-2. Genre filters (API responses based on queries are not accurate)
+2. Genre filters (resetting year to 2012 on filter)
+3. Api call is debounced by 1 second incase user wants to filter movies by selecting multiple genres
+4. Genre filter scrollbar will be visible on hover incase user wants to drag it. 
 
 (Skipped Optional features)
 
