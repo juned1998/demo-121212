@@ -1,0 +1,15 @@
+.pill {
+    font-family: 'Saira', sans-serif;
+    font-size: 14px;
+    padding: 6px 12px;
+    background-color: #484848;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color ease-out 300ms;
+    white-space: nowrap;
+}
+
+.active {
+    background-color: #F0283C;
+}

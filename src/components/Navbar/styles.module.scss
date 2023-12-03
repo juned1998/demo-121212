@@ -1,0 +1,29 @@
+.nav {
+    background: #242424;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    .nav__brand {
+        padding: 0.52rem 1rem;
+        display: flex;
+    } 
+    .nav__genreFilter {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        column-gap: 0.5rem;
+        overflow: auto;
+        padding: 1rem 1rem 0.5rem;
+        &:active::-webkit-scrollbar-thumb,
+        &:focus::-webkit-scrollbar-thumb,
+        &:hover::-webkit-scrollbar-thumb {
+            visibility: visible;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: darkgrey;
+            visibility: hidden;
+        }
+
+    }
+}

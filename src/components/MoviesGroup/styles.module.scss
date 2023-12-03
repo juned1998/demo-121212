@@ -1,0 +1,26 @@
+.moviesGroup {
+    margin-top: 1.5rem;
+    h2 {
+        font-family: 'Archivo', sans-serif;        
+        font-size: 20px;
+        font-weight: 600;
+        color: #fff;
+        line-height: 30px;
+        letter-spacing: -0.011em;
+        text-align: left;
+        margin-bottom: 0.5rem;
+    }
+
+    .moviesGroup__moviesContainer {
+        display: flex;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .moviesGroup__empty {
+        height: 200px;
+        display: grid;
+        place-items: center center;
+    }
+}
