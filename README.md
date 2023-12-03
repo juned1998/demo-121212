@@ -3,6 +3,8 @@
 1. Infinite scroll on upward and downward directions
 2. Genre filters (API responses based on queries are not accurate)
 
+(Skipped Optional features)
+
 # To run the project locally
 
 1. please install the packages using `npm install`
