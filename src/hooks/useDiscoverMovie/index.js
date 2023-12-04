@@ -125,7 +125,7 @@ export default function useDiscoverMovie() {
             `primary_release_year=${year}&` + 
             "page=1&" + 
             "vote_count.gte=100&" + 
-            `with_genres=${encodeURIComponent(params.with_genres.map(g => g.id).join('|'))}`, 
+            `with_genres=${encodeURIComponent(params.with_genres.map(g => g.id).join(','))}`, 
             {
                 method: 'GET'
             });
