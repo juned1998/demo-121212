@@ -1,18 +1,9 @@
-import { useEffect, useRef, useState } from "react";
 import MovieInfoCard from "../MovieInfoCard";
 import styles from './styles.module.scss';
-import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 export default function MoviesGroup({
     moviesForTheYear,
     genres,
 }) {
-    // const [visible, setVisible] = useState(true);
-    const sectionRef = useRef(null);
-    // useIntersectionObserver(sectionRef, {
-    //     threshold: 0,
-    //     rootMargin: '500px 0px 500px 0px',
-    // }, (entry) => setVisible(entry.isIntersecting));
-
     const {
         year,
         results = []
@@ -25,7 +16,6 @@ export default function MoviesGroup({
 
     return (
         <section 
-        ref={sectionRef}
         className={styles.moviesGroup}>
             <h2>{year}</h2>
             {resultsWithGenres.length > 0?
