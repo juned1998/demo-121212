@@ -28,6 +28,7 @@ function App() {
 
   useIntersectionObserver(observerBottomTarget, { 
     threshold: 0, 
+    rootMargin: '100px 0px 0px 0px',
   }, (entry) => entry.isIntersecting && fetchNextYearMovies());
 
 
